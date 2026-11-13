@@ -1,10 +1,20 @@
 version: 2
 
-sources: 
+sources:
+  # Staging Layer
   - name: staging
     database: AIRBNB
     schema: staging
     tables:
       - name: bookings
+      - name: listings
+      - name: hosts
+
+  # Silver Layer
+  - name: silver
+    database: AIRBNB
+    schema: silver
+    tables:
+      - name: silver_booking
       - name: listings
       - name: hosts
