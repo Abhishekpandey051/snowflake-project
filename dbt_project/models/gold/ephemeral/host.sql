@@ -7,7 +7,7 @@ WITH host AS (
        HOST_SINCE,
        RESPONSE_RATE_QUALITY,
        IS_SUPERHOST,
-       CREATED_AT
+       HOST_CREATED_AT
 
 FROM {{ ref('obd') }}       
 

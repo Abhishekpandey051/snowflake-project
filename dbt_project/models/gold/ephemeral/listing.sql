@@ -8,7 +8,7 @@ WITH listing AS (
     CITY,
     COUNTRY,
     PRICE_TAG,
-    CREATED_AT
+    LISTING_CREATED_AT
 
 FROM {{ ref('obd') }}    
 )
